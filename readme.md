@@ -1,0 +1,1 @@
+## The reference document for query methods can be found [here](https://docs.spring.io/spring-data/jpa/reference/jpa/query-methods.html)
