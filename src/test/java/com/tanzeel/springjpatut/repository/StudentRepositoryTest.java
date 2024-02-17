@@ -37,9 +37,9 @@ class StudentRepositoryTest {
                 .build();
 
         Student student = Student.builder()
-                .firstName("KelKppos")
-                .lastName("Jjsiue")
-                .email("keneth@gmail.com")
+                .firstName("Md")
+                .lastName("Sajid")
+                .email("k2@gmail.com")
                 .guardian(guardian)
                 .build();
 
@@ -59,6 +59,12 @@ class StudentRepositoryTest {
         if (studentRepository.existsById(studentId)) {
             studentRepository.deleteById(studentId);
         }
+    }
+
+    @Test
+    public void findAllStudentsByFirstName() {
+        List<Student> students = studentRepository.findByFirstName("Md");
+        System.out.println("Student: " + students);
     }
 
 
